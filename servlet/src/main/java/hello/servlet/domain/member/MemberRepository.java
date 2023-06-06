@@ -34,4 +34,8 @@ public class MemberRepository {
         return new ArrayList<>(store.values());
     }
 
+    public void clearStore() {
+        store.clear();
+    }
+
 }
