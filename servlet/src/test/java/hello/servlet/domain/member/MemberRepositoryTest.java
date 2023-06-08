@@ -29,7 +29,6 @@ class MemberRepositoryTest {
         member.setUsername("지섭");
 
         //when
-
         Member m = memberRepository.save(member);
 
         //then
