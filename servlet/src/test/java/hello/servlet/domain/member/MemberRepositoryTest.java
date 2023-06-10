@@ -32,7 +32,7 @@ class MemberRepositoryTest {
         Member m = memberRepository.save(member);
 
         //then
-        assertThat(memberRepository.findById(0L).getUsername()).isEqualTo("지섭");
+        assertThat(memberRepository.findById(1L).getUsername()).isEqualTo("지섭");
     }
 
     @Test
@@ -40,11 +40,11 @@ class MemberRepositoryTest {
         //given
         Member member = new Member();
         member.setAge(21);
-        member.setUsername("지섭");
+        member.setUsername("송지섭");
         memberRepository.save(member);
         Member member1 = new Member();
         member1.setAge(23);
-        member1.setUsername("재형");
+        member1.setUsername("박재형");
         memberRepository.save(member1);
 
         //when
