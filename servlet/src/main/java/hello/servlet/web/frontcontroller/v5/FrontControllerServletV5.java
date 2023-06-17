@@ -29,11 +29,11 @@ public class FrontControllerServletV5 extends HttpServlet {
     }
 
     private void initHandlerMappingMap() {
-        handlerMappingMap.put("/front-controller/v5/v3/members/new-form", new
+        handlerMappingMap.put("/front-controller/v5/v4/members/new-form", new
                 MemberFormControllerV3());
-        handlerMappingMap.put("/front-controller/v5/v3/members/save", new
+        handlerMappingMap.put("/front-controller/v5/v4/members/save", new
                 MemberSaveControllerV3());
-        handlerMappingMap.put("/front-controller/v5/v3/members", new
+        handlerMappingMap.put("/front-controller/v5/v4/members", new
                 MemberListControllerV3());
     }
 
